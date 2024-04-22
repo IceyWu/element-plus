@@ -1,0 +1,15 @@
+@use 'common/var' as *;
+@use 'mixins/mixins' as *;
+
+@include b(avatar-group) {
+  display: flex;
+  flex-wrap: wrap;
+  & > .#{$namespace}-avatar {
+    & + .#{$namespace}-avatar {
+      margin-left: 0;
+    }
+    &:not(:last-child) {
+      margin-right: -12px;
+    }
+  }
+}
