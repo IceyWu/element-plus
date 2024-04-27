@@ -47,6 +47,16 @@ avatar/fit
 
 :::
 
+## Group
+
+Avatar group display.
+
+:::demo
+
+avatar/group
+
+:::
+
 ## API
 
 ### Attributes

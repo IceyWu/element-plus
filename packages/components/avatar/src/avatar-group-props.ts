@@ -1,9 +1,10 @@
 import { useTooltipTriggerProps } from '@element-plus/components/tooltip'
+import { buildProps } from '@element-plus/utils'
 import { avatarProps } from './avatar'
 
 import type { ExtractPropTypes } from 'vue'
 
-export const avatarGroupProps = {
+export const avatarGroupProps = buildProps({
   /**
    * @description maximum number of avatars.
    */
@@ -34,5 +35,5 @@ export const avatarGroupProps = {
     type: Object,
     default: () => ({}),
   },
-} as const
+} as const)
 export type AvatarGroupProps = ExtractPropTypes<typeof avatarGroupProps>
